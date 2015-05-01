@@ -1,0 +1,12 @@
+language: scala
+scala:
+- 2.10.4
+- 2.11.2
+deploy:
+  provider: heroku
+  api_key:
+    secure: a+N70VXejWZgvifvU2TwoklTfb3wdZUGsxZfUdKLoVP1WrtA3Pb4anjUF8zzn0yIkG/Vn8nEEZ/RdkAw17KhseJpj2D9ysCaqm1f3GIhXE4cHCUwDvgYMVsFZ5hj4BRAwNAX2sn5seAIfGcin9oQqF+z5omeygnTKCXb6M+yw88=
+  app: todo-backend-play
+  on:
+    repo: hythloday/todo-backend-play
+    branch: dev

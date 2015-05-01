@@ -1,0 +1,13 @@
+# ~~~~
+
+# Collection endpoints
+GET         /                           controllers.TodoCollection.get
+OPTIONS     /                           controllers.TodoCollection.get
+POST        /                           controllers.TodoCollection.post
+DELETE      /                           controllers.TodoCollection.delete
+
+# Item-specific endpoints
+GET         /todos/:id                  controllers.TodoItem.get(id: Long)
+OPTIONS     /todos/:id                  controllers.TodoItem.get(id: Long)
+PATCH       /todos/:id                  controllers.TodoItem.patch(id: Long)
+DELETE      /todos/:id                  controllers.TodoItem.delete(id: Long)
